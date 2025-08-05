@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+.drawing-tooltip {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.polygon-editing .leaflet-editing-icon {
+  background-color: #fff;
+  border: 2px solid #3388ff;
+}
+
+.timeline-container {
+  width: 100%;
+  padding: 16px 0;
+}
+
+.range-slider {
+  margin: 20px 0;
+}
+
+.sidebar-section {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sidebar-section:last-child {
+  border-bottom: none;
+}
+
+.color-rule-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+.color-preview {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+}
+
+.polygon-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.polygon-list-item:hover {
+  border-color: #1890ff;
+  background: #f6ffed;
+}
+
+.polygon-list-item.selected {
+  border-color: #1890ff;
+  background: #e6f7ff;
+} 

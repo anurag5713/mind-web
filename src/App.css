@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+}
+
+/* Ensure map is visible - no conflicts with CDN Leaflet CSS */
+.leaflet-container {
+  height: 100% !important;
+  width: 100% !important;
+  background: #aad3df; /* Light blue fallback if tiles don't load */
+}
+
+/* Ensure tiles are visible */
+.leaflet-tile-pane {
+  z-index: 1 !important;
+}
+
+.leaflet-tile {
+  opacity: 1 !important;
+}
+
+.drawing-tooltip {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.polygon-editing .leaflet-editing-icon {
+  background-color: #fff;
+  border: 2px solid #3388ff;
+}
+
+.timeline-container {
+  width: 100%;
+  padding: 16px 0;
+}
+
+.range-slider {
+  margin: 20px 0;
+}
+
+.sidebar-section {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sidebar-section:last-child {
+  border-bottom: none;
+}
+
+.color-rule-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+.color-preview {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+}
+
+.polygon-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.polygon-list-item:hover {
+  border-color: #1890ff;
+  background: #f6ffed;
+}
+
+.polygon-list-item.selected {
+  border-color: #1890ff;
+  background: #e6f7ff;
+}
+
+/* Ensure zoom controls don't overlap with draw button */
+.leaflet-control-zoom {
+  margin-left: 10px !important;
+  margin-top: 10px !important;
+}
+
+/* Ensure map container has proper constraints */
+.leaflet-map-pane {
+  overflow: hidden;
+}
+
+/* Prevent map from expanding beyond container */
+.leaflet-control-container {
+  pointer-events: none;
+}
+
+.leaflet-control {
+  pointer-events: auto;
+}
+
+/* Ant Design Layout overrides for better flexbox behavior */
+.ant-layout {
+  min-height: 0;
+}
+
+.ant-layout-content {
+  min-height: 0;
+}
+
+/* Ensure proper flexbox behavior */
+.ant-layout-has-sider > .ant-layout {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Prevent scroll on main layout */
+.ant-layout-has-sider {
+  overflow: hidden;
+} 
