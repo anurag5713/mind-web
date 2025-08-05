@@ -92,7 +92,7 @@ A comprehensive React/TypeScript dashboard for visualizing dynamic weather data 
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/anurag5713/mind-web.git
 cd mind-web
 ```
 
